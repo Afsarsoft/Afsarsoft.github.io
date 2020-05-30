@@ -1,0 +1,48 @@
+// +++++++++++++++++++++++++++++++++++++++++
+// Form
+// +++++++++++++++++++++++++++++++++++++++++
+.form-wrap {
+  background: $background-form-color;
+  padding: 1.5rem 2.5rem;
+  color: $form-color;
+
+  h1,
+  p {
+    text-align: center;
+  }
+
+  button {
+    display: block;
+    width: $width-size;
+    padding: 1rem;
+    margin-top: 2rem;
+    background: $background-button-color;
+    color: $text-color;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background: $background-button-hover-color;
+  }
+}
+
+.form-wrap .bottom-text {
+  font-size: 1.3rem;
+  margin-top: 2rem;
+}
+
+.form-wrap .form-group {
+  margin-top: 1.5rem;
+
+  label {
+    display: block;
+    color: $label-color;
+  }
+
+  input {
+    width: $width-size;
+    padding: 1rem;
+    border: $input-border-color 0.1rem solid;
+    border-radius: 0.5rem;
+  }
+}

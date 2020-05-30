@@ -1,0 +1,62 @@
+// +++++++++++++++++++++++++++++++++++++++++
+// global
+// +++++++++++++++++++++++++++++++++++++++++
+* {
+  margin: 0;
+  padding: 0;
+  /* includes padding and borders */
+  box-sizing: border-box;
+}
+
+html {
+  /* make the 1 rem = 10px*/
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $body-font-family;
+  background: $background-body-color;
+  color: $text-color;
+  line-height: $line-height;
+}
+
+#container {
+  margin: 3rem auto;
+  max-width: 40rem;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: $header1;
+}
+h2 {
+  font-size: $header2;
+}
+h3 {
+  font-size: $header3;
+}
+h4,
+h5 {
+  font-size: $header4;
+}
+
+li {
+  font-size: $text;
+}
+
+a {
+  font-size: $text;
+  text-decoration: none;
+}
+
+button,
+label,
+input,
+p {
+  font-size: $text;
+}
+
+ul {
+  list-style: none;
+}
