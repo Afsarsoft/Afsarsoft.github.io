@@ -15,7 +15,16 @@ html {
 }
 
 body {
-  font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: $body-font-family;
+  background: $background-body-color;
+  color: $text-color;
+  line-height: $line-height;
+}
+
+#container {
+  margin: 3rem auto;
+  max-width: 40rem;
+  padding: 2rem;
 }
 
 h1 {
@@ -50,29 +59,4 @@ p {
 
 ul {
   list-style: none;
-}
-
-.go-top {
-  position: fixed;
-  top: 95%;
-  right: 0%;
-  z-index: 99;
-}
-
-.go-up {
-  padding-top: 10px;
-}
-
-.space {
-  padding-top: 2rem;
-}
-
-.bold {
-  font-weight: bold;
-}
-
-.center-h1 {
-  text-align: center;
-  text-decoration: underline;
-  padding-bottom: 1rem;
 }

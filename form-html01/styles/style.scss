@@ -1,0 +1,28 @@
+// defining the variables
+$header1: 3rem;
+$header2: 2.5rem;
+$header3: 2rem;
+$header4: 1.7rem;
+$text: 1.5rem;
+$line-height: 1.8;
+$width-size: 100%;
+
+$background-body-color: #344a72;
+$background-form-color: #fff;
+$background-button-color: #49c1a2;
+$background-button-hover-color: #37a08e;
+
+$text-color: #fff;
+$form-color: #333;
+$label-color: #666;
+$footer-color: #49c1a2;
+
+$input-border-color: #ddd;
+
+// font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$body-font-family: "Raleway", sans-serif;
+
+// importing our components
+@import "global";
+@import "form";
+@import "footer";
