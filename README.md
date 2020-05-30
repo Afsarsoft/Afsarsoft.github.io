@@ -1,3 +1,3 @@
-# Afsarsoft.github.io
+# Afsarsoft, training samples
 
-Testing ....
+Hope, can be useful
