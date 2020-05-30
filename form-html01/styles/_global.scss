@@ -1,0 +1,78 @@
+// +++++++++++++++++++++++++++++++++++++++++
+// global
+// +++++++++++++++++++++++++++++++++++++++++
+* {
+  margin: 0;
+  padding: 0;
+  /* includes padding and borders */
+  box-sizing: border-box;
+}
+
+html {
+  /* make the 1 rem = 10px*/
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-size: $header1;
+}
+h2 {
+  font-size: $header2;
+}
+h3 {
+  font-size: $header3;
+}
+h4,
+h5 {
+  font-size: $header4;
+}
+
+li {
+  font-size: $text;
+}
+
+a {
+  font-size: $text;
+  text-decoration: none;
+}
+
+button,
+label,
+input,
+p {
+  font-size: $text;
+}
+
+ul {
+  list-style: none;
+}
+
+.go-top {
+  position: fixed;
+  top: 95%;
+  right: 0%;
+  z-index: 99;
+}
+
+.go-up {
+  padding-top: 10px;
+}
+
+.space {
+  padding-top: 2rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.center-h1 {
+  text-align: center;
+  text-decoration: underline;
+  padding-bottom: 1rem;
+}
