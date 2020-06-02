@@ -1,0 +1,57 @@
+// +++++++++++++++++++++++++++++++++++++++++
+// header
+// +++++++++++++++++++++++++++++++++++++++++
+/* Navbar */
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $background-button-color;
+  color: $text-color;
+  width: 100%;
+  height: 7rem;
+  position: fixed;
+  top: 0;
+  padding: 0 35rem;
+
+  a {
+    color: $text-color;
+  }
+
+  h1 {
+    float: left;
+    padding-top: 1rem;
+  }
+
+  h1:hover {
+    text-decoration: underline;
+  }
+
+  ul {
+    list-style: none;
+    float: right;
+  }
+
+  ul li {
+    float: left;
+    font-size: $header4;
+  }
+
+  ul li a {
+    display: block;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  ul li a:hover {
+    background: $background-light-color;
+    color: $background-body-color;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  ul li a.current {
+    background: $background-footer-color;
+    color: $background-button-hover-color;
+  }
+}
