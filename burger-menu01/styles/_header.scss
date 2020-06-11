@@ -1,0 +1,32 @@
+// +++++++++++++++++++++++++++++++++++++++++++++++++++
+// header
+// +++++++++++++++++++++++++++++++++++++++++++++++++++
+.main-head {
+  background: $dark-color;
+  position: sticky;
+  top: 0rem;
+  z-index: 2;
+}
+
+nav {
+  width: 90%;
+  margin: auto;
+  @include flex(center, center, row);
+  min-height: 10vh;
+  padding: 2rem 0rem;
+}
+
+#logo {
+  flex: 1 1 10rem;
+  color: white;
+}
+
+.nav-links {
+  @include flex(space-around, center, row);
+  flex: 1 1 20rem;
+}
+
+.burger,
+.menu-check {
+  display: none;
+}
