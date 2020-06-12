@@ -1,0 +1,77 @@
+// +++++++++++++++++++++++++++++++++++++++++++++++++++
+// header
+// +++++++++++++++++++++++++++++++++++++++++++++++++++
+.main-head {
+  background: $dark-color;
+  color: $light-color;
+  position: sticky;
+  top: 0rem;
+  z-index: 2;
+}
+
+nav {
+  width: 90%;
+  margin: auto;
+  padding: 1rem;
+  min-height: 5vh;
+}
+
+.logo {
+  @include flex(flex-start, center, row);
+  flex: 1 1 10rem;
+}
+
+.burger {
+  position: fixed;
+  top: 1rem;
+  right: 2rem;
+  display: block;
+  cursor: pointer;
+  span {
+    padding: 0.2rem 2rem;
+    background: $mid-color;
+    margin: 0.5rem 0rem;
+    display: block;
+    transition: all 0.5s ease;
+  }
+}
+
+.nav-links {
+  background: $mid-color;
+  width: 50%;
+  height: 40%;
+  position: fixed;
+  top: 5rem;
+  left: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  transition: transform 1s ease;
+
+  a {
+    color: $light-color;
+    font-size: 3rem;
+    text-decoration: underline;
+  }
+}
+
+.nav-open {
+  transform: translateX(-100%);
+}
+
+.toggle {
+  .line1 {
+    transform: rotateZ(45deg) translateY(300%);
+    background: $mid-color;
+  }
+
+  .line2 {
+    opacity: 0;
+  }
+
+  .line3 {
+    transform: rotateZ(-45deg) translateY(-300%);
+    background: $mid-color;
+  }
+}
