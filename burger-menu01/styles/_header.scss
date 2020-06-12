@@ -3,27 +3,43 @@
 // +++++++++++++++++++++++++++++++++++++++++++++++++++
 .main-head {
   background: $dark-color;
+  color: $light-color;
   position: sticky;
   top: 0rem;
   z-index: 2;
+
+  ul a:hover {
+    background-color: $light-color;
+    color: $dark-color;
+    text-decoration: underline;
+    font-weight: bold;
+    padding: 0.5rem 1.5rem;
+    border-radius: 1.5rem;
+  }
 }
 
 nav {
+  @include flex(center, center, row);
   width: 90%;
   margin: auto;
-  @include flex(center, center, row);
+  padding: 1rem;
   min-height: 10vh;
-  padding: 2rem 0rem;
+  flex-wrap: wrap;
+
+  ul {
+    @include flex(space-around, center, row);
+    // short cut: flex grow, flex shrink, flex bases
+    flex: 1 1 40rem;
+    // flex-grow: 1;
+    // flex-shrink: 1;
+    // flex-basis: 40rem;
+    list-style: none;
+  }
 }
 
-#logo {
+.logo {
+  @include flex(flex-start, center, row);
   flex: 1 1 10rem;
-  color: white;
-}
-
-.nav-links {
-  @include flex(space-around, center, row);
-  flex: 1 1 20rem;
 }
 
 .burger,
