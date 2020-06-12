@@ -148,7 +148,7 @@ nav ul {
   }
   .burger span {
     padding: 0.2rem 2rem;
-    background: #525252;
+    background: #414141;
     margin: 0.5rem 0rem;
     display: block;
     -webkit-transition: all 0.5s ease;
@@ -185,7 +185,7 @@ nav ul {
   .toggle .line1 {
     -webkit-transform: rotateZ(45deg) translateY(300%);
             transform: rotateZ(45deg) translateY(300%);
-    background: #525252;
+    background: #414141;
   }
   .toggle .line2 {
     opacity: 0;
@@ -193,7 +193,7 @@ nav ul {
   .toggle .line3 {
     -webkit-transform: rotateZ(-45deg) translateY(-300%);
             transform: rotateZ(-45deg) translateY(-300%);
-    background: #525252;
+    background: #414141;
   }
 }
 /*# sourceMappingURL=style.css.map */

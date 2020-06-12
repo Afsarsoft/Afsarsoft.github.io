@@ -1,13 +1,7 @@
 // defining the variables
 $light-color: #ffff;
-$gray-text: #525252;
-$background-color: #414141;
+$mid-color: #414141;
 $dark-color: #131c27;
-
-// $light-color: #fff;
-// $mid-light-color: #f7c08a;
-// $mid-color: #444;
-// $mid-dark-color: #0a1d42;
 
 @mixin flex($justify, $align, $direction) {
   display: flex;
