@@ -3,12 +3,12 @@
 // +++++++++++++++++++++++++++++++++++++++++
 /* Navbar */
 #navbar {
-  background: $background-button-color;
-  color: $text-color;
+  background: $mid-color;
+  color: $light-color;
   overflow: auto;
 
   a {
-    color: $text-color;
+    color: $light-color;
   }
 
   h1 {
@@ -23,28 +23,26 @@
   ul {
     list-style: none;
     float: right;
-  }
+    li {
+      float: left;
+      font-size: $header4;
 
-  ul li {
-    float: left;
-    font-size: $header4;
-  }
+      a.current {
+        background: $mid-color;
+        color: $mid-light-color;
+      }
 
-  ul li a {
-    display: block;
-    padding: 2rem;
-    text-align: center;
-  }
-
-  ul li a:hover {
-    background: $background-light-color;
-    color: $background-body-color;
-    text-decoration: underline;
-    font-weight: bold;
-  }
-
-  ul li a.current {
-    background: $background-footer-color;
-    color: $background-button-hover-color;
+      a {
+        display: block;
+        padding: 2rem;
+        text-align: center;
+        &:hover {
+          background: $light-color;
+          color: $mid-dark-color;
+          text-decoration: underline;
+          font-weight: bold;
+        }
+      }
+    }
   }
 }

@@ -17,7 +17,7 @@ body {
 }
 
 a {
-  color: #fff;
+  color: #333;
   text-decoration: none;
 }
 
@@ -58,9 +58,22 @@ p {
 
 /* Navbar */
 #navbar {
-  background: #444;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #333;
   color: #fff;
-  overflow: auto;
+  width: 100%;
+  height: 7rem;
+  position: fixed;
+  top: 0;
+  padding: 0 35rem;
 }
 
 #navbar a {
@@ -86,11 +99,6 @@ p {
   font-size: 1.7rem;
 }
 
-#navbar ul li a.current {
-  background: #444;
-  color: #f7c08a;
-}
-
 #navbar ul li a {
   display: block;
   padding: 2rem;
@@ -98,25 +106,14 @@ p {
 }
 
 #navbar ul li a:hover {
-  background: #fff;
-  color: #0a1d42;
+  background: #f4f4f4;
+  color: #344a72;
   text-decoration: underline;
   font-weight: bold;
 }
 
-@media screen and (max-width: 800px) {
-  #navbar .logo {
-    float: none;
-    text-align: center;
-  }
-  #navbar ul,
-  #navbar ul li {
-    float: none;
-  }
-  #navbar ul a,
-  #navbar ul li a {
-    padding: 0.5rem;
-    border-bottom: #0a1d42 dotted 0.1rem;
-  }
+#navbar ul li a.current {
+  background: #444;
+  color: #f7c08a;
 }
 /*# sourceMappingURL=style.css.map */

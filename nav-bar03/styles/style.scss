@@ -19,14 +19,6 @@ $background-footer-color: #444;
 
 $body-font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
-@mixin flex($justify, $align, $direction) {
-  display: flex;
-  justify-content: $justify;
-  align-items: $align;
-  flex-direction: $direction;
-}
-
 // importing our components
 @import "global";
 @import "header";
-@import "mobile";

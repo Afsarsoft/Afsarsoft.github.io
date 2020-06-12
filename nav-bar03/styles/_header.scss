@@ -3,8 +3,9 @@
 // +++++++++++++++++++++++++++++++++++++++++
 /* Navbar */
 #navbar {
-  @include flex(space-between, center, row);
-
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: $background-button-color;
   color: $text-color;
   width: 100%;
@@ -15,14 +16,15 @@
 
   a {
     color: $text-color;
+  }
+
+  h1 {
+    float: left;
+    padding-top: 1rem;
+
     &:hover {
       text-decoration: underline;
     }
-  }
-
-  .logo {
-    @include flex(flex-start, center, row);
-    flex: 1 1 10rem;
   }
 
   ul {
@@ -30,6 +32,7 @@
     float: right;
 
     li {
+      float: left;
       font-size: $header4;
 
       a {
