@@ -17,7 +17,8 @@ body {
 }
 
 a {
-  color: #333;
+  font-size: 2rem;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -56,14 +57,27 @@ p {
   text-align: center;
 }
 
-/* Navbar */
-#navbar {
+.main-head {
+  background: #444;
+  color: #fff;
+}
+
+.main-head ul a:hover {
+  background-color: #fff;
+  color: #f7c08a;
+  text-decoration: underline;
+  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1.5rem;
+}
+
+nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -71,24 +85,34 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background-color: #333;
-  color: #fff;
-  width: 100%;
-  height: 7rem;
-  position: fixed;
-  top: 0;
-  padding: 0 35rem;
+  width: 90%;
+  margin: auto;
+  padding: 1rem;
+  min-height: 10vh;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-#navbar a {
-  color: #fff;
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  list-style: none;
 }
 
-#navbar a:hover {
-  text-decoration: underline;
-}
-
-#navbar .logo {
+.logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -107,38 +131,22 @@ p {
           flex: 1 1 10rem;
 }
 
-#navbar ul {
-  list-style: none;
-  float: right;
-}
-
-#navbar ul li {
-  font-size: 1.7rem;
-}
-
-#navbar ul li a {
-  display: block;
-  padding: 2rem;
-  text-align: center;
-}
-
-#navbar ul li a:hover {
-  background: #f4f4f4;
-  color: #344a72;
+.current {
+  background-color: #fff;
+  color: #0a1d42;
   text-decoration: underline;
-  font-weight: bold;
-}
-
-#navbar ul li a.current {
-  background: #444;
-  color: #f7c08a;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1.5rem;
 }
 
 @media screen and (max-width: 800px) {
   html {
     font-size: 50%;
   }
-  #navbar .logo {
+  .main-head {
+    width: 100%;
+  }
+  nav .logo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -157,7 +165,7 @@ p {
             flex: 1 1 20rem;
     margin-top: 2rem;
   }
-  #navbar ul {
+  nav ul {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 60rem;
             flex: 1 1 60rem;

@@ -1,54 +1,48 @@
 // +++++++++++++++++++++++++++++++++++++++++
 // header
 // +++++++++++++++++++++++++++++++++++++++++
-/* Navbar */
-#navbar {
-  @include flex(space-between, center, row);
+.main-head {
+  background: $mid-color;
+  color: $light-color;
 
-  background-color: $background-button-color;
-  color: $text-color;
-  width: 100%;
-  height: 7rem;
-  position: fixed;
-  top: 0;
-  padding: 0 35rem;
-
-  a {
-    color: $text-color;
-    &:hover {
-      text-decoration: underline;
-    }
+  ul a:hover {
+    background-color: $light-color;
+    color: $mid-light-color;
+    text-decoration: underline;
+    font-weight: bold;
+    padding: 0.5rem 1.5rem;
+    border-radius: 1.5rem;
   }
+}
 
-  .logo {
-    @include flex(flex-start, center, row);
-    flex: 1 1 10rem;
-  }
+nav {
+  @include flex(center, center, row);
+  width: 90%;
+  margin: auto;
+  padding: 1rem;
+  min-height: 10vh;
+  flex-wrap: wrap;
 
   ul {
+    @include flex(space-around, center, row);
+    // short cut: flex grow, flex shrink, flex bases
+    flex: 1 1 40rem;
+    // flex-grow: 1;
+    // flex-shrink: 1;
+    // flex-basis: 40rem;
     list-style: none;
-    float: right;
-
-    li {
-      font-size: $header4;
-
-      a {
-        display: block;
-        padding: 2rem;
-        text-align: center;
-
-        &:hover {
-          background: $background-light-color;
-          color: $background-body-color;
-          text-decoration: underline;
-          font-weight: bold;
-        }
-      }
-
-      a.current {
-        background: $background-footer-color;
-        color: $background-button-hover-color;
-      }
-    }
   }
+}
+
+.logo {
+  @include flex(flex-start, center, row);
+  flex: 1 1 10rem;
+}
+
+.current {
+  background-color: $light-color;
+  color: $mid-dark-color;
+  text-decoration: underline;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1.5rem;
 }
