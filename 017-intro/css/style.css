@@ -1,0 +1,69 @@
+h1 {
+  color: green;
+}
+
+.random h1 {
+  /* do the following for h1 of class random. */
+  color: darkmagenta;
+}
+
+h2 {
+  color: blue;
+}
+
+h3 {
+  color: cornflowerblue;
+}
+
+.first-title {
+  /* class start with . */
+  color: red
+}
+
+#youtube-link {
+  /* id starts with # */
+  /* Most cases use class since id need to be unique like logo */
+  color: black;
+}
+
+* {
+  /* Star selector basically select everything on our page  */
+  font-size: 20px;
+}
+
+.my-list+ul {
+  /* selecting something below it */
+  list-style: none;
+}
+
+ul>li {
+  /* ul that has list in it */
+  /* only changes li that belong to ul */
+  color: fuchsia;
+}
+
+.nav-links>li {
+  /* every li that belongs to nav-links */
+  color: firebrick;
+}
+
+/* or doing it as below */
+
+.nav-links li {
+  /* every li that belongs to nav-links */
+  color: forestgreen;
+}
+
+.nav-links li a {
+  /* go to class, go li, go to a */
+  color: black;
+}
+
+.links li:nth-child(2) {
+  /* for class links second li */
+  color: blue;
+}
+
+/* CSS works from top down */
+
+/* class and id has a bigger priority to selection  */
