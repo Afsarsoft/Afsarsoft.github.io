@@ -1,0 +1,19 @@
+// defining the variables
+$light-color: #ffff;
+$mid-color: rgba(13, 110, 139, 0.75);
+$mid-light-color: rgba(229, 148, 0, 0.9);
+$dark-color: rgba(24, 39, 51, 0.85);
+$menu-speed: 0.75s;
+
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+// importing our components
+@import "global";
+@import "menu";
+@import "mobile";
+@import "showcase";

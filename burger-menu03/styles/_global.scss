@@ -1,0 +1,66 @@
+// +++++++++++++++++++++++++++++++++++++++++++++++++++
+//  Global Styles
+// +++++++++++++++++++++++++++++++++++++++++++++++++++
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* makes it 1rem = 10px */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+}
+
+.container {
+  max-width: 96rem;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 3rem;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+p {
+  font-size: 2rem;
+}
+
+.space {
+  padding-top: 10rem;
+}
+
+.big-space {
+  padding-top: 1rem;
+  padding-bottom: 5rem;
+}
+
+.container-m {
+  width: 70%;
+  max-width: 98rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  background: $dark-color;
+  color: $light-color;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  transition: opacity 0.5s ease-in-out;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
