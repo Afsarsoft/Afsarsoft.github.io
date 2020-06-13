@@ -1,1 +1,1 @@
-Sample Burger Menu, visible always using JavaScript.
+Sample Burger Menu, visible always using CSS.
