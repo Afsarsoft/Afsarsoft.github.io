@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  background: rgb(131, 131, 223);
+  color: white;
+  width: 300px;
+  padding: 20px;
+  margin-top: 20px;
+}
