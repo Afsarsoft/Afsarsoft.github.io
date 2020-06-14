@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.box {
+  padding: 5rem;
+}
+
+.box1 {
+  background: rgb(188, 216, 233);
+}
+
+.box2 {
+  background: rgb(211, 166, 166);
+}
+
+.box3 {
+  background: rgb(163, 126, 160);
+}
+
+.box4 {
+  background: rgb(139, 163, 132);
+}
+
+.box5 {
+  background: rgb(177, 176, 146);
+}
+
+/* Parent */
+
+.boxes {
+  border: 1rem solid rgb(204, 204, 204);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 10rem 20rem 20rem;
+}
