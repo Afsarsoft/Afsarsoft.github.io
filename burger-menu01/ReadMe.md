@@ -1,1 +1,0 @@
-Sample Burger Menu, visible on small screen using JavaScript.
