@@ -12,6 +12,11 @@ html {
   padding: 5rem;
 }
 
+p {
+  padding: 2rem;
+  font-size: 2rem;
+}
+
 .box1 {
   background: rgb(188, 216, 233);
 }
