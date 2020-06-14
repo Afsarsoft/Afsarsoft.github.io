@@ -1,0 +1,10 @@
+// Define variables
+$phone-color: red;
+$tablet-color: blue;
+$normal-color: green;
+$wide-color: black;
+$landscape-color: orange;
+
+// importing our components
+@import "global";
+@import "mobile";

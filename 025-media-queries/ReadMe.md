@@ -1,0 +1,1 @@
+Sample media queries to create a responsive experience by checking the screen types.
