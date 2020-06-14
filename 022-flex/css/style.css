@@ -9,11 +9,16 @@ html {
 }
 
 .container {
-  border: .3rem solid black;
+  border: 0.3rem solid black;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   height: 50vh;
+}
+
+p {
+  padding: 2rem;
+  font-size: 2rem;
 }
 
 .box {
