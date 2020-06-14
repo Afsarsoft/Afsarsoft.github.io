@@ -8,3 +8,8 @@ h1 {
   margin: 50px;
   background-color: crimson;
 }
+
+p,
+img {
+  padding-left: 50px;
+}
