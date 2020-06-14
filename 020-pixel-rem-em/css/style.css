@@ -5,6 +5,7 @@
 }
 
 html {
+  /* Keep the root html font size in percentage by 62.5% to make the 1 rem=10px, easier for the calculation. */
   font-size: 62.5%;
 }
 
@@ -13,5 +14,9 @@ html {
 }
 
 .text-section div {
+  font-size: 2rem;
+}
+
+h3 {
   font-size: 2rem;
 }
