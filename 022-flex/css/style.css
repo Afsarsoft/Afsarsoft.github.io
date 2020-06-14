@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  border: .3rem solid black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 50vh;
+}
+
+.box {
+  height: 20rem;
+}
+
+.box1 {
+  background: rgb(149, 79, 241);
+}
+
+.box2 {
+  background: rgb(46, 99, 243);
+  align-self: center;
+}
+
+.box3 {
+  background: rgb(4, 134, 54);
+}
+
+.box4 {
+  background: rgb(241, 79, 179);
+}
+
+.box5 {
+  background: rgb(241, 245, 10);
+}
+
+.box6 {
+  background: rgb(75, 44, 160);
+}
