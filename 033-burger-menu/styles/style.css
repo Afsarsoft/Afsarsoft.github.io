@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  /* make the 1 rem = 10px*/
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.container {
+  min-height: 70vh;
+  width: 70%;
+  max-width: 100rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+.box {
+  display: block;
+  min-height: 400px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.home {
+  color: #277518;
+  font-weight: bold;
+}
+
+.header {
+  background-color: #667fff;
+  color: #ffffff;
+  border-bottom: #277518 0.3rem solid;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.header a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+
+.header .info {
+  padding-top: 1rem;
+  padding-left: 2rem;
+  margin: 0;
+  float: left;
+  text-transform: none;
+}
+
+.header .moreInfo::after {
+  font-size: 0.9rem;
+  text-transform: none;
+}
+
+.header .current a {
+  color: #277518;
+  font-weight: bold;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #667fff;
+}
+
+.header ul a {
+  display: block;
+  padding: 2rem;
+  border-right: 0.1rem solid #ffffff;
+  text-decoration: none;
+}
+
+.header ul a:hover {
+  background-color: #ffffff;
+  text-decoration: underline;
+  color: #333;
+  font-weight: bold;
+}
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  -webkit-transition: max-height 0.3s ease-out;
+  transition: max-height 0.3s ease-out;
+}
+
+.header .menu-icon {
+  padding: 3rem 1rem;
+  position: relative;
+  float: right;
+  cursor: pointer;
+}
+
+.header .menu-icon .nav-icon {
+  background: #333;
+  display: block;
+  height: 0.2rem;
+  width: 1.8rem;
+  position: relative;
+  -webkit-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+}
+
+.header .menu-icon .nav-icon::before {
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  top: 0.5rem;
+}
+
+.header .menu-icon .nav-icon::after {
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  top: -0.5rem;
+}
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 35rem;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon::before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon::after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 0;
+}
+
+@media (min-width: 50em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 2rem 3rem;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */

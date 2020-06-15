@@ -1,0 +1,31 @@
+// +++++++++++++++++++++++++++++++++++++++++
+// global
+// +++++++++++++++++++++++++++++++++++++++++
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* make the 1 rem = 10px*/
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.container {
+  min-height: 70vh;
+  width: 70%;
+  max-width: 100rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+.box {
+  display: block;
+  min-height: 400px;
+}
+
+h1 {
+  text-align: center;
+}

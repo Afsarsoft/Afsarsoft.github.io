@@ -1,0 +1,37 @@
+// Smartphones & Tablet
+@media (min-width: 50em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 2rem 3rem;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+// Smartphones
+// @media only screen and (max-width: 500px) {
+// }
+
+// Tablet
+// @media (min-width: 501px) and (max-width: 800px) {
+// }
+
+// Normal
+// @media (min-width: 801px) and (max-width: 1200px) {
+// }
+
+// Widescreen
+// @media (min-width: 1201px) {
+// }
+
+// Landscape
+// @media (max-height: 500px) {
+// }

@@ -1,0 +1,10 @@
+// defining the variables
+$light-color: #ffffff;
+$mid-color: #277518;
+$dark-color: #333;
+$background-color: #667fff;
+
+// importing our components
+@import "global";
+@import "menu";
+@import "mobile";

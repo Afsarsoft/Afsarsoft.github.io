@@ -1,0 +1,135 @@
+// +++++++++++++++++++++++++++++++++++++++++
+// Header & hamburger menu related
+// +++++++++++++++++++++++++++++++++++++++++
+.home {
+  color: $mid-color;
+  font-weight: bold;
+}
+
+.header {
+  background-color: $background-color;
+  color: $light-color;
+  border-bottom: $mid-color 0.3rem solid;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+
+  a {
+    color: $light-color;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+  }
+
+  .info {
+    padding-top: 1rem;
+    padding-left: 2rem;
+    margin: 0;
+    float: left;
+    text-transform: none;
+  }
+
+  .moreInfo::after {
+    font-size: 0.9rem;
+    text-transform: none;
+  }
+
+  .current a {
+    color: $mid-color;
+    font-weight: bold;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: $background-color;
+  }
+
+  ul a {
+    display: block;
+    padding: 2rem;
+    border-right: 0.1rem solid $light-color;
+    text-decoration: none;
+  }
+
+  ul a:hover {
+    background-color: $light-color;
+    text-decoration: underline;
+    color: $dark-color;
+    font-weight: bold;
+  }
+
+  .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+  }
+
+  .menu-icon {
+    padding: 3rem 1rem;
+    position: relative;
+    // get hamburger bar to right
+    float: right;
+    cursor: pointer;
+  }
+
+  .menu-icon .nav-icon {
+    background: $dark-color;
+    display: block;
+    height: 0.2rem;
+    width: 1.8rem;
+    position: relative;
+    transition: background-color 0.3s ease-out;
+  }
+
+  .menu-icon .nav-icon::before {
+    background: $dark-color;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all 0.3s ease-out;
+    top: 0.5rem;
+  }
+
+  .menu-icon .nav-icon::after {
+    background: $dark-color;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all 0.3s ease-out;
+    top: -0.5rem;
+  }
+
+  // disappear the check box
+  .menu-btn {
+    display: none;
+  }
+
+  // when our menu checked
+  .menu-btn:checked ~ .menu {
+    max-height: 35rem;
+  }
+
+  .menu-btn:checked ~ .menu-icon .nav-icon {
+    background: transparent;
+  }
+
+  .menu-btn:checked ~ .menu-icon .nav-icon::before {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+
+  .menu-btn:checked ~ .menu-icon .nav-icon::after {
+    transform: rotate(45deg);
+    top: 0;
+  }
+}
