@@ -1,0 +1,15 @@
+{
+  "name": "ts_w",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://scyrus@dev.azure.com/scyrus/TS_W/_git/TS_W"
+  },
+  "author": "",
+  "license": "ISC"
+}
