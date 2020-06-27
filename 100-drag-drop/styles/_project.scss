@@ -1,0 +1,67 @@
+#finished-projects {
+  border-color: #0044ff;
+
+  header {
+    background: #0044ff;
+  }
+
+  li h2 {
+    color: #0044ff;
+  }
+
+  .droppable {
+    background: #d6e1ff;
+  }
+}
+
+.droppable {
+  background: #ffe3ee;
+}
+
+.projects {
+  margin: 1.5rem;
+  border: 0.1rem solid #ff0062;
+
+  header {
+    background: #ff0062;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h2 {
+    margin: 0;
+    color: white;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 1.5rem;
+  }
+
+  li {
+    box-shadow: 0.1rem 0.1rem 0.8rem rgba(0, 0, 0, 0.26);
+    padding: 1rem;
+    margin: 1rem;
+    // padding: 1.5rem;
+    // margin: 1.5rem;
+    background: white;
+  }
+
+  li h2 {
+    color: #ff0062;
+    margin: 0.5rem 0;
+    // margin: 1rem 0;
+  }
+
+  li h3 {
+    color: #575757;
+    font-size: 1.5rem;
+  }
+
+  li p {
+    margin: 0;
+  }
+}

@@ -1,0 +1,137 @@
+button {
+  font: inherit;
+  background: #ff0062;
+  border: 0.1rem solid #ff0062;
+  cursor: pointer;
+  color: white;
+  padding: 1rem 1.25rem;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover, button:active {
+  background: #a80041;
+  border-color: #a80041;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  /* make the 1 rem = 10px*/
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+}
+
+label,
+input,
+textarea {
+  display: block;
+  margin: 1rem 0;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+textarea {
+  font: inherit;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  max-width: 40rem;
+  border: 0.5rem solid #ccc;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  background: #fff5f9;
+}
+
+#user-input {
+  margin: 1.5rem;
+  padding: 1.5rem;
+  border: 0.5rem solid #ff0062;
+  background: #f7f7f7;
+}
+
+#finished-projects {
+  border-color: #0044ff;
+}
+
+#finished-projects header {
+  background: #0044ff;
+}
+
+#finished-projects li h2 {
+  color: #0044ff;
+}
+
+#finished-projects .droppable {
+  background: #d6e1ff;
+}
+
+.droppable {
+  background: #ffe3ee;
+}
+
+.projects {
+  margin: 1.5rem;
+  border: 0.1rem solid #ff0062;
+}
+
+.projects header {
+  background: #ff0062;
+  height: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects h2 {
+  margin: 0;
+  color: white;
+}
+
+.projects ul {
+  list-style: none;
+  margin: 0;
+  padding: 1.5rem;
+}
+
+.projects li {
+  -webkit-box-shadow: 0.1rem 0.1rem 0.8rem rgba(0, 0, 0, 0.26);
+          box-shadow: 0.1rem 0.1rem 0.8rem rgba(0, 0, 0, 0.26);
+  padding: 1rem;
+  margin: 1rem;
+  background: white;
+}
+
+.projects li h2 {
+  color: #ff0062;
+  margin: 0.5rem 0;
+}
+
+.projects li h3 {
+  color: #575757;
+  font-size: 1.5rem;
+}
+
+.projects li p {
+  margin: 0;
+}
+/*# sourceMappingURL=style.css.map */

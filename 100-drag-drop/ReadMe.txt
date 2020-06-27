@@ -1,5 +1,6 @@
-// Compile one file without the need of package.json and tsconfig.json files
-tsc app.ts --target ESNEXT --watch
+// Compile one file in watch mode without the need of package.json and tsconfig.json files
+//
+tsc app.ts --target ESNEXT -w
 
 // To create package.json
 npm ini
@@ -122,8 +123,6 @@ module.exports = {
   ]
 };
 
-// For Development, make sure package.json has the following:
-  "build": "webpack"
 
 // For Production, make sure package.json has the following:
   "build": "webpack --config webpack.config.prod.js"
