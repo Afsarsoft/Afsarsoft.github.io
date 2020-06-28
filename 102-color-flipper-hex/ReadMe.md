@@ -1,1 +1,1 @@
-Color Flipper, TypeScript
+Color Flipper Hex, TypeScript

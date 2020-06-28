@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   mode: 'development', // will do less optimization for debug needs.
-  entry: './src/app-reg.ts',
+  entry: './src/app-hex.ts',
   output: {
     filename: 'bundle.js', // single bundle js file at the end
     path: path.resolve(__dirname, 'dist'), //absolute path to output file

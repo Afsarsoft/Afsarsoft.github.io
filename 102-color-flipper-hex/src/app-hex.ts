@@ -10,7 +10,7 @@ prjHex._element.addEventListener("click", () => {
   for (let i = 0; i < 6; i++) {
     hexColor += hexes[getRandomNumber()];
   }
-  // console.log(hexColor);
+  console.log(hexColor);
 
   prjHex._color.textContent = hexColor;
   document.body.style.backgroundColor = hexColor;
