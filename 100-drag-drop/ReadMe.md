@@ -1,1 +1,1 @@
-Sample sign up page V1
+Sample drag and drop in TypeScript.
