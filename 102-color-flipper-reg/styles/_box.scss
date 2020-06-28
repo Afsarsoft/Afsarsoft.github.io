@@ -1,0 +1,22 @@
+main {
+  // min-height: calc(100vh - 3rem);
+  min-height: 90vh;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  text-align: center;
+
+  h2 {
+    background: $color-black;
+    color: $color-white;
+    padding: 1rem;
+    border-radius: $radius;
+    margin-bottom: 2.5rem;
+  }
+}
+
+.color {
+  color: $primary-color-5;
+}

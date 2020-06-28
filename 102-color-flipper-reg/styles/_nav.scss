@@ -1,0 +1,36 @@
+.nav-links {
+  display: flex;
+}
+
+.nav-center {
+  width: 90vw;
+  max-width: $fixed-width;
+  margin: 0 auto;
+  @include flex(space-between, center, row);
+
+  h4 {
+    margin-bottom: 0;
+    color: $primary-color-5;
+  }
+}
+
+nav {
+  background: $color-white;
+  height: 3rem;
+  display: grid;
+  align-items: center;
+  box-shadow: $dark-shadow;
+
+  a {
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 1rem;
+    color: $primary-color-1;
+    letter-spacing: $spacing;
+    margin-right: 1rem;
+
+    &:hover {
+      color: $primary-color-5;
+    }
+  }
+}
