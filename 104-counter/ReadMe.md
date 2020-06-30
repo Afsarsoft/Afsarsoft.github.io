@@ -1,14 +1,6 @@
-Based on JavaScript version https://youtu.be/3PHXvlpOkf4
-Counter app, TypeScript
+## Counter, Hex
+TypeScript OOP
+Based on JavaScript Sample from https://youtu.be/3PHXvlpOkf4
 
-Switching from Production to Development:
-- In package.json file, update the following in "scripts" tag
-"build": "webpack"
-- Execute the following to build bundle.js
-npm run build
-
-Switching from Development to Production:
-- In package.json file, update the following in "scripts" tag
-"build": "webpack --config webpack.config.prod.js"
-- Execute the following to build bundle.js
-npm run build
+If need to change the code, follow instructions in below link to compile it.
+https://www.afsarsoft.com/training/TS-Tutorial/#TS-webpack
