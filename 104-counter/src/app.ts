@@ -28,8 +28,7 @@ const changeColor = (): void => {
 
 prj.btns.forEach((btn) => {
   btn.addEventListener("click", (e) => {
-    // not figuring out the type!
-    const styles: any = e.currentTarget!.classList
+    const styles = (<HTMLInputElement>e.target)!.classList
     changeCounter(styles);
     changeColor();
   });
