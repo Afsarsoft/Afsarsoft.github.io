@@ -1,12 +1,5 @@
 // Fonts
-@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
-
-// Variables
-$success-color: #2ecc71;
-$error-color: #e74c3c;
-$background-color: #f9fafb;
-
-$font: "Open Sans", sans-serif;
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
 
 @mixin flex($justify, $align, $direction) {
   display: flex;
@@ -17,5 +10,5 @@ $font: "Open Sans", sans-serif;
 
 // Importing our components
 @import "box";
-@import "form";
+@import "main";
 @import "global";

@@ -1,6 +1,3 @@
-TypeScript Movie Seat Booking
-Based on JavaScript ES5 version of https://vanillawebprojects.com/
-
 ## Movie Seat Booking
 
 Display movie choices and seats in a theater to select from in order to purchase tickets
@@ -16,15 +13,9 @@ Display movie choices and seats in a theater to select from in order to purchase
 
 Design inspiration from [Dribbble](https://dribbble.com/shots/3628370-Movie-Seat-Booking)
 
+TypeScript OOP, Movie Seat Booking
+Based on JavaScript version of https://vanillawebprojects.com/
 
-Switching from Production to Development:
-- In package.json file, update the following in "scripts" tag
-"build": "webpack"
-- Execute the following to build bundle.js
-npm run build
+If need to change the code, follow instructions in below link to compile it.
+https://www.afsarsoft.com/training/TS-Tutorial/#TS-webpack
 
-Switching from Development to Production:
-- In package.json file, update the following in "scripts" tag
-"build": "webpack --config webpack.config.prod.js"
-- Execute the following to build bundle.js
-npm run build

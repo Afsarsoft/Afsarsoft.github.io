@@ -1,6 +1,20 @@
+.movie-container {
+  margin: 20px 0;
+
+  select {
+    background-color: #fff;
+    border: 0;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 10px;
+    padding: 5px 15px 5px 15px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+}
+
 .container {
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-  width: 400px;
+  perspective: 1000px;
+  margin-bottom: 30px;
 }

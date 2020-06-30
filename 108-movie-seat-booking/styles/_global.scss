@@ -3,14 +3,10 @@
 }
 
 body {
-  background-color: $background-color;
-  font-family: $font;
-  @include flex(center, center, row);
-  min-height: 100vh;
+  background-color: #242333;
+  color: #fff;
+  @include flex(center, center, column);
+  height: 100vh;
+  font-family: "Lato", sans-serif;
   margin: 0;
-}
-
-h2 {
-  text-align: center;
-  margin: 0 0 20px;
 }
