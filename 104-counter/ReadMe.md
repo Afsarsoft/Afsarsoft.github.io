@@ -1,4 +1,4 @@
-## Counter, Hex
+## Counter
 TypeScript OOP
 Based on JavaScript Sample from https://youtu.be/3PHXvlpOkf4
 
