@@ -1,0 +1,49 @@
+.gift-img {
+  margin-bottom: 2rem;
+}
+
+.gift-info h3 {
+  text-transform: uppercase;
+  color: $primary-color-3;
+}
+
+.gift-info p {
+  color: $color-grey-6;
+}
+
+.date {
+  color: $color-grey-5;
+  font-size: 0.85rem;
+}
+
+.gift-info p {
+  margin: 2rem 0;
+}
+
+.deadline {
+  display: flex;
+}
+
+.deadline-format {
+  background: $color-grey-1;
+  color: $color-white;
+  margin-right: 1rem;
+  width: 5rem;
+  height: 5rem;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.deadline-format span {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.85rem;
+}
+
+.deadline h4:not(.expired) {
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+  letter-spacing: $spacing;
+}
