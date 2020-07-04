@@ -1,7 +1,3 @@
-html {
-  scroll-behavior: smooth;
-}
-
 *,
 ::after,
 ::before {
@@ -84,11 +80,4 @@ p {
     color: $color-white;
     background: $color-black;
   }
-}
-
-.btn-white {
-  color: $color-white;
-  border-color: $color-white;
-  border-radius: 0;
-  padding: 0.5rem 1rem;
 }
