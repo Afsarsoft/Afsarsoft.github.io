@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Vue JS</title>
+  </head>
+
+  <body>
+    <div id="app">
+      <button v-on:click="counterA++">Increase A</button>
+      <button v-on:click="counterA--">Decrease A</button>
+      <button v-on:click="counterB++">Increase B</button>
+      <p>Counter: {{counterA}} | {{counterB}}</p>
+      <p>Result: {{result()}} | {{output}}</p>
+    </div>
+
+    <script>
+      new Vue({
+        el: '#app',
+        data: {
+          counterA: 0,
+          counterB: 0
+        },
+        // reserved object property methods defines it a function
+        // but behaves as property and we can call it as property
+        // here result function gets call every time
+        // for computed property, Vue is aware that output is not interested on counterB
+        // so, output not being executed. We are caching the result of counterB
+        // and not interested for calculating it.
+        // only use the method when you want to calculate and not caching
+        computed: {
+          output() {
+            console.log('Computed');
+            return this.counterA > 5 ? 'Greater 5' : 'Smaller than 5'
+          }
+        },
+        methods: {
+          result() {
+            console.log('Method');
+            return this.counterA > 5 ? 'Greater 5' : 'Smaller than 5'
+          }
+        }
+      });
+    </script>
+
+  </body>
+
+</html>

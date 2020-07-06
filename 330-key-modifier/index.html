@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Vue JS</title>
+  </head>
+
+  <body>
+    <div id="app">
+      <!-- with v-on we listen to events -->
+      <!-- using key modifier, alert when enter or space used-->
+      <input type="text" v-on:keyup.enter.space="alertMe">
+    </div>
+
+    <script>
+      new Vue({
+        el: '#app',
+        methods: {
+          alertMe() {
+            alert('Alert!');
+          }
+        }
+      });
+    </script>
+
+  </body>
+
+</html>
