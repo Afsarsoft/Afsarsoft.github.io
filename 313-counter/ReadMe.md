@@ -1,2 +1,2 @@
-## Counter V1
+## Counter V2
 Vue JS sample using CDN
