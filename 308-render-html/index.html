@@ -10,6 +10,8 @@
 
   <body>
     <div id="app">
+      <h4>Use of directive v-html to render the html</h4>
+
       <h1 v-once>{{title}}</h1>
       <p>{{sayHello()}} - <a v-bind:href="link">Google</a></p>
       <hr>
@@ -18,7 +20,6 @@
       <!-- because it protect us from cross side scripting attacks -->
       <p>{{finishedLink}}</p>
 
-      <!-- directive v-html renders the html -->
       <!-- careful in using it -->
       <p v-html="finishedLink"></p>
     </div>
