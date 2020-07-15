@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Vue JS</title>
+  </head>
+
+  <body>
+    <div id="app">
+      <h4>Use of shorthands @ for v-on: and : for v-bind:</h4>
+      <!-- v-on for events -->
+      <!-- v-bind for binding to attributes -->
+      <!-- <button v-on:click="changeLink">Click to Change Link from Google to Microsfot</button> -->
+      <button @click="changeLink">Click to Change Link from Google to Microsfot</button>
+      <!-- <a v-bind:href="link" target=”_blank”>Link</a> -->
+      <a :href="link" target=”_blank”>Link</a>
+    </div>
+
+    <script>
+      new Vue({
+        el: '#app',
+        data: {
+          link: 'http://google.com'
+        },
+        methods: {
+          changeLink() {
+            this.link = 'http://microsoft.com'
+          }
+        }
+      });
+    </script>
+
+  </body>
+
+</html>
