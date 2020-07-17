@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Vue JS</title>
+  </head>
+
+  <body>
+    <div id="app">
+      <h4>Use of directive v-bind, to bind the elements</h4>
+      <p v-if="flag">
+        You can see me!
+      </p>
+      <!-- enter app.flag = false in the console. You should see the message disappear. -->
+    </div>
+
+    <script>
+      let app = new Vue({
+        el: '#app',
+        data: {
+          flag: true
+        }
+      });
+    </script>
+
+
+  </body>
+
+</html>
