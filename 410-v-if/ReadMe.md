@@ -1,2 +1,0 @@
-## v-if
-Vue JS sample using CDN
