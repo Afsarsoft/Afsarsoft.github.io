@@ -1,10 +1,11 @@
-new Vue({
-  el: '#app',
-  data: {
-    counter: 0,
-    myStyle: {
-      color: ""
-    }
+const app = Vue.createApp({
+  data() {
+    return {
+      counter: 0,
+      myStyle: {
+        color: ""
+      }
+    };
   },
   methods: {
     increaseCounter() {
@@ -33,3 +34,7 @@ new Vue({
     }
   }
 });
+
+app.mount('#counter');
+
+
