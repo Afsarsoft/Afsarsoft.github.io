@@ -1,96 +1,100 @@
-new Vue({
-  el: '#app',
-  data: {
-    playerHealth: 100,
-    monsterHealth: 100,
-    gameIsRunning: false,
-    turns: []
+getRandomValue = (min, max) => Math.floor(Math.random() * (max - min)) + min;
+
+const app = Vue.createApp({
+  data() {
+    return {
+      playerHealth: 100,
+      monsterHealth: 100,
+      currentRound: 0,
+      winner: null,
+      logMessages: []
+    };
+  },
+  computed: {
+    monsterBarStyles() {
+      if (this.monsterHealth < 0) {
+        return { width: '0%' };
+      }
+      return { width: this.monsterHealth + '%' }
+    },
+    playerBarStyles() {
+      if (this.playerHealth < 0) {
+        return { width: '0%' };
+      }
+      return { width: this.playerHealth + '%' }
+    },
+    mayUseSpecialAttack() {
+      return this.currentRound % 3 !== 0;
+    }
+  },
+  watch: {
+    playerHealth(value) {
+      if (value <= 0 && this.monsterHealth <= 0) {
+        this.winner = 'draw';
+      } else if (value <= 0) {
+        this.winner = 'monster';
+      }
+    },
+    monsterHealth(value) {
+      if (value <= 0 && this.playerHealth <= 0) {
+        this.winner = 'draw';
+      } else if (value <= 0) {
+        this.winner = 'player';
+      }
+    },
   },
   methods: {
     startGame() {
-      this.gameIsRunning = true;
       this.playerHealth = 100;
       this.monsterHealth = 100;
-      this.turns = [];
+      this.winner = null;
+      this.currentRound = 0;
+      this.logMessages = [];
     },
-    attack() {
-      let damage = this.calculateDamage(3, 10);
-      this.monsterHealth -= damage;
-      // log it
-      this.turns.unshift({
-        isPlayer: true,
-        text: 'Player hits Monster for ' + damage
-      });
-
-      if (this.checkWin()) {
-        return;
-      }
-      this.monsterAttacks();
+    attackMonster() {
+      this.currentRound++;
+      const attackValue = getRandomValue(5, 12);
+      this.monsterHealth -= attackValue;
+      this.addLogMessage('player', 'attack', attackValue);
+      this.attackPlayer();
     },
-    specialAttack() {
-      let damage = this.calculateDamage(10, 20);
-      this.monsterHealth -= damage;
-      // log it
-      this.turns.unshift({
-        isPlayer: true,
-        text: 'Player hits Monster hard for ' + damage
-      });
-      if (this.checkWin()) {
-        return
-      }
-      this.monsterAttacks();
+    attackPlayer() {
+      const attackValue = getRandomValue(8, 15);
+      this.playerHealth -= attackValue
+      this.addLogMessage('monster', 'attack', attackValue);
     },
-    heal() {
-      if (this.playerHealth <= 90) {
-        this.playerHealth += 10;
-      } else {
+    specialAttackMonster() {
+      this.currentRound++;
+      const attackValue = getRandomValue(10, 25);
+      this.monsterHealth -= attackValue;
+      this.addLogMessage('player', 'special-attack', attackValue);
+      this.attackPlayer();
+    },
+    healPlayer() {
+      this.currentRound++;
+      const healValue = getRandomValue(8, 20);
+      if (this.playerHealth + healValue > 100) {
         this.playerHealth = 100;
+      } else {
+        this.playerHealth += healValue;
       }
-      // log it
-      this.turns.unshift({
-        isPlayer: true,
-        text: 'Player heals for 10'
+      this.addLogMessage('player', 'heal', healValue);
+      this.attackPlayer();
+    },
+    surrender() {
+      this.winner = 'monster';
+    },
+    // Adding logs
+    addLogMessage(who, what, value) {
+      // Adding to beginning of the array
+      // Adding an object to array.
+      this.logMessages.unshift({
+        actionBy: who,
+        actionType: what,
+        actionValue: value
       });
-      this.monsterAttacks();
-    },
-    giveUp() {
-      this.gameIsRunning = false;
-    },
-    monsterAttacks() {
-      let damage = this.calculateDamage(5, 12);
-      this.playerHealth -= damage;
-      // log it
-      this.turns.unshift({
-        isPlayer: false,
-        text: 'Monster hits Player for ' + damage
-      });
-
-      this.checkWin();
-    },
-    // Getting random number
-    calculateDamage(min, max) {
-      return Math.max(Math.floor(Math.random() * max) + 1, min);
-    },
-    checkWin() {
-      if (this.monsterHealth <= 0) {
-        // JavaScript function
-        if (confirm('You won! New Game?')) {
-          this.startGame();
-        } else {
-          this.gameIsRunning = false;
-        }
-        return true;
-      } else if (this.playerHealth <= 0) {
-        // JavaScript function
-        if (confirm('You lost! New Game?')) {
-          this.startGame();
-        } else {
-          this.gameIsRunning = false;
-        }
-        return true;
-      }
-      return false;
     }
-  }
-
+  },
 });
+
+app.mount('#game');
