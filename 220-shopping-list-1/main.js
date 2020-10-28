@@ -3,21 +3,33 @@ const app = Vue.createApp({
   data() {
     return {
       state: 'default',
-      header: 'shopping list app',
+      header: 'shopping list',
       newItem: '',
       items: [
         {
-          label: '10 party hats',
+          label: 'Banana',
           purchased: false,
         },
         {
-          label: '2 boards games',
+          label: 'Carrot',
+          purchased: false,
+        },
+        {
+          label: 'Oatmeal',
           purchased: true,
         },
         {
-          label: '20 cups',
+          label: 'Apple',
           purchased: false,
-        }
+        },
+        {
+          label: 'Avacado',
+          purchased: false,
+        },
+        {
+          label: 'Bread',
+          purchased: false,
+        },
       ]
     };
   },
