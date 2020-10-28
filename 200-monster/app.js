@@ -1,3 +1,5 @@
+// If we do not directly use any Vue data and methods inside our HTML,
+//  we can simply use typical JavaScript code.
 getRandomValue = (min, max) => Math.floor(Math.random() * (max - min)) + min;
 
 const app = Vue.createApp({
@@ -5,13 +7,14 @@ const app = Vue.createApp({
     return {
       playerHealth: 100,
       monsterHealth: 100,
-      currentRound: 0,
+      currentRound: 0, // keep track of game rounds
       winner: null,
       logMessages: []
     };
   },
   computed: {
     monsterBarStyles() {
+      // make it 0 percent if the game is over.
       if (this.monsterHealth < 0) {
         return { width: '0%' };
       }
@@ -24,10 +27,13 @@ const app = Vue.createApp({
       return { width: this.playerHealth + '%' }
     },
     mayUseSpecialAttack() {
+      // Only use special attack every 3 rounds 
       return this.currentRound % 3 !== 0;
     }
   },
+  // Using watcher to see who won the game
   watch: {
+    // name needs to be same as property to watch
     playerHealth(value) {
       if (value <= 0 && this.monsterHealth <= 0) {
         this.winner = 'draw';
@@ -53,9 +59,11 @@ const app = Vue.createApp({
     },
     attackMonster() {
       this.currentRound++;
+      // we want minimum 5 and maximum 12 points of damage.
       const attackValue = getRandomValue(5, 12);
       this.monsterHealth -= attackValue;
       this.addLogMessage('player', 'attack', attackValue);
+      // When we attack the monster, monster attack back at us
       this.attackPlayer();
     },
     attackPlayer() {
@@ -73,6 +81,7 @@ const app = Vue.createApp({
     healPlayer() {
       this.currentRound++;
       const healValue = getRandomValue(8, 20);
+      // making sure to not go beyond the initial value
       if (this.playerHealth + healValue > 100) {
         this.playerHealth = 100;
       } else {

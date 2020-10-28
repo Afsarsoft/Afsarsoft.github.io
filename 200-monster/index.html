@@ -27,6 +27,7 @@
         <div class="healthbar__value" :style="playerBarStyles"></div>
       </div>
     </section>
+    <!-- checks for truthy -->
     <section class="container" v-if="winner">
       <h2>Game Over!</h2>
       <h3 v-if="winner === 'monster'">You Lost!</h3>
@@ -34,6 +35,9 @@
       <h3 v-else>It's a draw!</h3>
       <button @click="startGame">Start New Game</button>
     </section>
+    <!-- removing the game controls if we have a winner -->
+    <!-- <section id="controls" v-if="!winner"> -->
+    <!-- since it is a direct neighbor we can have v-else-->
     <section id="controls" v-else>
       <button @click="attackMonster">ATTACK</button>
       <button :disabled="mayUseSpecialAttack" @click="specialAttackMonster">SPECIAL ATTACK</button>
