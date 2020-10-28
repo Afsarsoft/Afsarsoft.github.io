@@ -16,7 +16,7 @@
   </header>
   <main id="goals">
     <section id="user-goals">
-      <h2>My course goals</h2>
+      <h2>Goals</h2>
       <input type="text" v-model="enteredGoalValue" />
       <button @click="addGoal">Add Goal</button>
       <!-- v-if remove and adds elements from and to DOM -->
@@ -28,7 +28,7 @@
       <ul v-else>
         <!-- removing goal -->
         <li v-for="(goal, index) in goals" @click="removeGoal(index)">
-          {{ index + 1}} - {{ goal }}</li>
+          {{ index + 1 }} - {{ goal }}</li>
       </ul>
       <!-- some examples for v-for -->
       <!-- <ul> -->
