@@ -4,14 +4,13 @@ const app = Vue.createApp({
   // Data function must return always an object
   data() {
     return {
-      goal1: 'Wake-up everyday at 5AM.',
-      goal2: 'Learn Vue!',
-      goal3: 'Exercise everyday at least one hour.',
-      goal3: 'Go to bed by 9PM.',
+      goal1: "Wake-up everyday at 5AM.",
+      goal2: "Learn Vue!",
+      goal3: "Exercise everyday at least one hour.",
+      goal4: "Go to bed by 9PM.",
     };
-  }
+  },
 });
 
-// Connect Vue to HTML 
-app.mount('#goal');
-
+// Connect Vue to HTML
+app.mount("#goal");
