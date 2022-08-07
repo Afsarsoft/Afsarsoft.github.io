@@ -24,7 +24,7 @@ export default {
       <h1>Goals</h1>
     </header>
     <main id="goal">
-      <div class="user-goal">
+      <div class="user-info">
         <h2>Daily Goals</h2>
         <!--{{}} called Interpolation,Vue looks in data object for it-->
         <p>{{ goal1 }}</p>

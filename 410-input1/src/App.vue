@@ -21,10 +21,10 @@ export default {
 
   <body>
     <header>
-      <h1>Vue, input event, v-on</h1>
+      <h1>Links</h1>
     </header>
     <main id="link">
-      <div class="user-info">
+      <div class="user-goal">
         <h2>Vue Links</h2>
         <p>{{ goal }}</p>
         <!-- We can hard code the link but let's get it dynamically. -->
