@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+}
+
+.user-info {
+  box-shadow: 0 2px 8px $boxColor;
+  margin: 3rem;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+
+  h2 {
+    font-size: 2rem;
+    border-bottom: $borderBottomColor;
+    color: $mainColor;
+    margin: 0 0 1rem 0;
+  }
+
+  ul {
+    list-style: none;
+    margin: 1rem 0;
+    padding: 0;
+  }
+
+  li {
+    margin: 1rem 0;
+    font-size: 1.25rem;
+    font-weight: bold;
+    background-color: #8ddba4;
+    padding: 0.5rem;
+    color: #1f1f1f;
+    border-radius: 25px;
+  }
+
+  input {
+    font: inherit;
+    border: 1px solid $borderInputColor;
+
+    &:focus {
+      outline: none;
+      border-color: $borderInputFColor;
+      background-color: $backgroundInputFColor;
+    }
+  }
+
+  button {
+    font: inherit;
+    cursor: pointer;
+    border: 1px solid $buttonBColor;
+    background-color: $buttonBColor;
+    color: $pbColor;
+    padding: 0.05rem 1rem;
+    box-shadow: 1px 1px 2px $boxColor;
+
+    &:hover,
+    &:active {
+      background-color: $buttonHAColor;
+      border-color: $buttonHAColor;
+      box-shadow: 1px 1px 4px $boxColor;
+    }
+  }
+}
