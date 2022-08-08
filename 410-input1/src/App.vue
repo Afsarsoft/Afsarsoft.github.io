@@ -1,8 +1,10 @@
 <script lang="ts">
-export default {
+import { defineComponent } from "vue";
+
+export default defineComponent({
   data() {
     return {
-      name: "",
+      name: "" as string,
     };
   },
   methods: {
@@ -12,7 +14,7 @@ export default {
       this.name = `${target.value} ${lastName}`;
     },
   },
-};
+});
 </script>
 
 <template>
