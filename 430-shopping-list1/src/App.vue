@@ -57,6 +57,9 @@ export default defineComponent({
       this.state = newState;
       this.newItem = "";
     },
+
+    // TODO
+    // How to use interface here
     togglePurchased(item: { label: string; purchased: boolean }) {
       item.purchased = !item.purchased;
     },
