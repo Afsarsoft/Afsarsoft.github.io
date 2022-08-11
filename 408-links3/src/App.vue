@@ -7,15 +7,17 @@ export default defineComponent({
       vueSite: "https://vuejs.org/",
       vueSchool: "https://vueschool.io/courses?filter=free-courses",
       vueMastery: "https://www.vuemastery.com/courses-path/beginner/",
+      courseGoalA: "Learn Vue!",
+      courseGoalB: "Master Vue!",
     };
   },
   methods: {
     outputGoal() {
       const randomNumber = Math.random();
       if (randomNumber < 0.5) {
-        return "Learn Vue!";
+        return this.courseGoalA;
       } else {
-        return "Master Vue!";
+        return this.courseGoalB;
       }
     },
   },
@@ -32,7 +34,7 @@ export default defineComponent({
 
   <body>
     <header>
-      <h1>Vue, input event, v-on</h1>
+      <h1>Vue, input event, v-on, this</h1>
     </header>
     <main id="link">
       <div class="user-info">

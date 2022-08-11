@@ -1,5 +1,7 @@
 <script lang="ts">
-export default {
+import { defineComponent } from "vue";
+
+export default defineComponent({
   data() {
     return {
       goal: "Learn Vue!",
@@ -8,7 +10,7 @@ export default {
       vueMastery: "https://www.vuemastery.com/courses-path/beginner/",
     };
   },
-};
+});
 </script>
 
 <template>

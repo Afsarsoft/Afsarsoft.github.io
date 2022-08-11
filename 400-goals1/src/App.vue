@@ -1,5 +1,7 @@
 <script lang="ts">
-export default {
+import { defineComponent } from "vue";
+
+export default defineComponent({
   data() {
     return {
       goal1: "Wake-up everyday at 5AM.",
@@ -8,7 +10,7 @@ export default {
       goal4: "Go to bed by 9PM.",
     };
   },
-};
+});
 </script>
 
 <template>
