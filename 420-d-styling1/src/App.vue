@@ -21,7 +21,7 @@ export default defineComponent({
     },
   },
   methods: {
-    boxSelected(box) {
+    boxSelected(box: string) {
       if (box === "A") {
         this.boxASelected = !this.boxASelected;
       } else if (box == "B") {
