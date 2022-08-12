@@ -8,15 +8,10 @@ export default defineComponent({
     };
   },
   methods: {
-    setName(event: Event, lastName: string) {
-      // TODO: Volar issue
-      // Note in TypeScript need to cast it for event types
-      // const target = <HTMLInputElement>e.target;
-      // this.name = `${target.value} ${lastName}`;
-
-      // still getting error from volar, so we go like this ,,,
+    setName() {
+      // TODO: Volar bug
       // https://github.com/vuejs/babel-plugin-jsx/issues/234
-      this.name = `${event.target.value} ${lastName}`;
+      this.name = event.target.value;
     },
   },
 });
@@ -36,9 +31,7 @@ export default defineComponent({
     </header>
     <main id="input">
       <div class="user-info">
-        <!-- listening to input event on this input element  -->
-        <!-- having argument with event -->
-        <input type="text" v-on:input="setName($event, 'Cyrus')" />
+        <input type="text" v-on:input="setName()" />
         <p>Your Name: {{ name }}</p>
       </div>
     </main>
