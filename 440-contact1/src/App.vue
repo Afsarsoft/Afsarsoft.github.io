@@ -1,6 +1,9 @@
 <script lang="ts">
 import { defineComponent } from "vue";
-import ContactInfo from "./components/ContactInfo.vue";
+
+import ContactInfo from "@/components/ContactInfo.vue";
+// Easier way to do it by changing the vite.config.ts
+// import ContactInfo from "./components/ContactInfo.vue";
 
 export default defineComponent({
   components: {
